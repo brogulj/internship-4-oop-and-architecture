@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>internship_4_oop_and_architecture.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\internship-4-oop-and-architecture.Data\internship-4-oop-and-architecture.Data.csproj" />
+  </ItemGroup>
+
+</Project>
