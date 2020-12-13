@@ -15,6 +15,7 @@ namespace internship_4_oop_and_architecture.Domain.Models
         }
         public int MaxMana { get; set; } = 100;
         public int Mana { get; set; } = 100;
+        public bool WasRevived { get; set; } = false;
         public override void AttackMonster(Monster monster, Player player)
         {
             if (Mana > 0) {

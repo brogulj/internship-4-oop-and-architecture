@@ -7,7 +7,7 @@ namespace internship_4_oop_and_architecture.Domain.Services
 {
     public static class GenerateMonster
     {
-        public static Monster NewMonster()
+        public static Monster NewMonster(List<Monster> monsters)
         {
             var randomInt = RandomNumber.Int(1, 10);
             
@@ -20,7 +20,7 @@ namespace internship_4_oop_and_architecture.Domain.Services
                 return new Brute();
             }
             else
-                return new Witch();
+                return new Witch(monsters);
         
         }
     }

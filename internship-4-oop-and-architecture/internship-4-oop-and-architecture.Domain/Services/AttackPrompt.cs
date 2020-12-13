@@ -9,7 +9,17 @@ namespace internship_4_oop_and_architecture.Domain.Services
     {
         public static void NewTurn(Player player, List<Monster> monsters)
         {
-            var monster = monsters[1];
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            var monster = monsters[0];
+            if (player is Ranger ranger)
+            {
+                if (ranger.PreviousRoundStun)
+                {
+                    Console.WriteLine("You win a round automatically!");
+                    ranger.AttackMonster(monster, ranger);
+                    ranger.PreviousRoundStun = false;
+                }
+            }
             Console.WriteLine("New turn");
             Console.WriteLine("Do you want to attack directly, from the side or counter attack?");
             Console.WriteLine("Type 1 for Direct");
@@ -45,6 +55,7 @@ namespace internship_4_oop_and_architecture.Domain.Services
                     UserChoice = Console.ReadLine();
                 }
             }
+            Console.ResetColor();
         }
     }
 }
