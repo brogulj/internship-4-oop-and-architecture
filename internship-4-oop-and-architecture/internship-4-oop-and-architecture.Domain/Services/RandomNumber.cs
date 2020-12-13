@@ -9,7 +9,7 @@ namespace internship_4_oop_and_architecture.Domain.Services
         public static int Int(int low, int high)
         {
             var random = new Random();
-            return random.Next(low, high);
+            return random.Next(low, high+1);
         }
         public static double Double()
         {

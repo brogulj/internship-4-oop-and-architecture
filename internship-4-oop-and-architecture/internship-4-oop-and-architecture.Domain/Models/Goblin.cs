@@ -10,7 +10,7 @@ namespace internship_4_oop_and_architecture.Domain.Models
         public Goblin()
         {
             Name = "Goblin";
-            Health = 50;
+            Health = 70;
             Damage = 15;
             GivenExp = 20;
             MaxHealth = Health;

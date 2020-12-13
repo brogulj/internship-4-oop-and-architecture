@@ -10,12 +10,12 @@ namespace internship_4_oop_and_architecture.Domain.Models
         public Witch(List<Monster> monsters)
         {
             Name = "Witch";
-            Health = 100;
-            Damage = 33;
+            Health = 150;
+            Damage = 50;
             GivenExp = 100;
             MaxHealth = Health;
-            monsters.Add(GenerateMonster.NewMonster());
-            monsters.Add(GenerateMonster.NewMonster());
+            monsters.Add(GenerateMonster.NewMonster(monsters));
+            monsters.Add(GenerateMonster.NewMonster(monsters));
 
         }
         public override void AttackPlayer(Player player, Monster monster, List<Monster> entities)

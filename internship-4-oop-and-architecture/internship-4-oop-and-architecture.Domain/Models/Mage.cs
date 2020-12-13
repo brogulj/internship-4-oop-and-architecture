@@ -4,7 +4,7 @@ using System.Text;
 
 namespace internship_4_oop_and_architecture.Domain.Models
 {
-    class Mage : Player
+    public class Mage : Player
     {
         public Mage(string name)
         {

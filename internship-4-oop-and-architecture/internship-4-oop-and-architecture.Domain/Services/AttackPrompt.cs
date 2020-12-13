@@ -31,7 +31,6 @@ namespace internship_4_oop_and_architecture.Domain.Services
             {
 
                 var randomInt = RandomNumber.Int(1, 3);
-                while(HasChosen)
                 if (UserChoice == "1" || UserChoice == "2" || UserChoice == "3") {
                     if (randomInt == 1)
                     {

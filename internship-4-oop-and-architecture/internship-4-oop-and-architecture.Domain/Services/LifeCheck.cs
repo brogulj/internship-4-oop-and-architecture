@@ -7,11 +7,12 @@ namespace internship_4_oop_and_architecture.Domain.Services
 {
     public static class LifeCheck
     {
-        public static void Check(Player player, List<Monster> monsters)
+        public static bool Check(Player player, List<Monster> monsters)
         {
             if (monsters[0].Health <= 0)
             {
                 Console.WriteLine("You have killed this monster!");
+                player.Experience += monsters[0].GivenExp;
                 monsters.RemoveAt(0);
                 Console.WriteLine($"Your next opponent is a {monsters[0].Name}");
             }
@@ -26,18 +27,25 @@ namespace internship_4_oop_and_architecture.Domain.Services
                         mage.Health = mage.MaxHealth;
                         mage.Mana = mage.MaxMana;
                         mage.WasRevived = true;
+                        return true;
                     }
                     else
                     {
                         Console.WriteLine("You have been killed!");
                         Console.WriteLine("This is where your journey ends.");
+                        return false;
                     }
                 }
                 else
                 {
                     Console.WriteLine("You have been killed!");
                     Console.WriteLine("This is where your journey ends.");
+                    return false;
                 }
+            }
+            else
+            {
+                return true;
             }
         }
     }

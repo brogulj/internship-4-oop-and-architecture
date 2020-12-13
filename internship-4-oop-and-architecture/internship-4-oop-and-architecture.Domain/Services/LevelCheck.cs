@@ -55,8 +55,8 @@ namespace internship_4_oop_and_architecture.Domain.Services
                         ranger.Health = ranger.MaxHealth;
                         ranger.Damage += (ranger.Level - baseLevel) * 8;
                         ranger.Experience = leftoverExperience;
-                        ranger.CriticalChance += 0.3;
-                        ranger.StunChance += 0.3;
+                        ranger.CriticalChance += 0.05;
+                        ranger.StunChance += 0.05;
                     }
                 }
             }

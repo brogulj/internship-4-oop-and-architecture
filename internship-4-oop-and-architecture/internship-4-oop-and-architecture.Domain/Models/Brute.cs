@@ -9,7 +9,7 @@ namespace internship_4_oop_and_architecture.Domain.Models
     {
         public Brute()
         {
-            Health = 80;
+            Health = 100;
             Damage = 20;
             Name = "Brute";
             GivenExp = 40;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace internship_4_oop_and_architecture.Domain.Models
 {
-    class Ranger: Player
+    public class Ranger: Player
     {
         public Ranger(string name)
         {

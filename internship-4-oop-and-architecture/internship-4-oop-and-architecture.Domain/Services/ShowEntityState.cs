@@ -19,7 +19,7 @@ namespace internship_4_oop_and_architecture.Domain.Services
 
         public static void Show(Player player)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"{player.Name} state:");
             Console.WriteLine($"Health = {player.Health}");
             Console.WriteLine($"Damage = {player.Damage}");
