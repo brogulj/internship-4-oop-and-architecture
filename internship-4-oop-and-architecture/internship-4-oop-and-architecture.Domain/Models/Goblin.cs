@@ -9,9 +9,11 @@ namespace internship_4_oop_and_architecture.Domain.Models
     {
         public Goblin()
         {
-            Health = RandomNumber.Int(30,60);
-            Damage = RandomNumber.Int(10, 20);
+            Name = "Goblin";
+            Health = 50;
+            Damage = 15;
             GivenExp = 20;
+            MaxHealth = Health;
         }
     }
 }
