@@ -9,13 +9,13 @@ namespace internship_4_oop_and_architecture.Domain.Services
     {
         public static Monster NewMonster(List<Monster> monsters)
         {
-            var randomInt = RandomNumber.Int(1, 10);
+            var randomInt = RandomNumber.Int(1, 11);
             
-            if (randomInt <= 6)
+            if (randomInt <= 5)
             {
                 return new Goblin();
             }
-            else if (randomInt <= 9)
+            else if (randomInt <= 8)
             {
                 return new Brute();
             }

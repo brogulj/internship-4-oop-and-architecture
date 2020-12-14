@@ -11,6 +11,7 @@ namespace internship_4_oop_and_architecture.Presentation
         
         static void Main(string[] args)
         {
+            Console.SetWindowSize(70, 50);
             var data = new DataStore();
             while (LifeCheck.Check(data.Player, data.MonsterList))
             {
@@ -24,10 +25,7 @@ namespace internship_4_oop_and_architecture.Presentation
                 Console.WriteLine("");
                 LevelCheck.Check(data.Player); 
                 Console.WriteLine("Press any key for next turn");
-                Console.ReadLine();
-                ShowEntityState.Show(data.Player); 
-                Console.WriteLine("");
-                ShowEntityState.Show(data.MonsterList[0]);
+                Console.ReadKey();
 
 
             }
